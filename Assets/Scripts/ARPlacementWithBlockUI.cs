@@ -14,10 +14,10 @@ public class ARPlacementWithBlockUI : MonoBehaviour
 
     [SerializeField]
     private GameObject uiPanel;
-
+/*
     [SerializeField]
     private Button toggleButton;
-
+*/
     [SerializeField]
     private TextMeshProUGUI log;
 
@@ -30,12 +30,13 @@ public class ARPlacementWithBlockUI : MonoBehaviour
         arRaycastManager = GetComponent<ARRaycastManager>();
     }
 
-    public void Toggle()
+  /*  public void Toggle()
     {
         uiPanel.SetActive(!uiPanel.activeSelf);
         var toggleButtonText = toggleButton.gameObject.GetComponentInChildren<TextMeshProUGUI>();
         toggleButtonText.text = uiPanel.activeSelf ? "UI OFF" : "UI ON";
     }
+    */
 
     void Update()
     {
